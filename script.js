@@ -879,37 +879,35 @@ if (harmonium) {
             "click",
             function () {
 
-                // Find middle Sa
-
-                const keys =
-                    harmonium.querySelectorAll(
-                        ".white"
+                // Find all Sa keys
+                const saKeys =
+                    Array.from(
+                        harmonium.querySelectorAll(".white")
+                    ).filter(
+                        function (key) {
+                            return key.dataset.swara === "Sa";
+                        }
                     );
 
 
-                for (const key of keys) {
-
-                    if (
-                        key.dataset.swara ===
-                        "Sa"
-                    ) {
-
-                        const frequency =
-                            Number(
-                                key.dataset.frequency
-                            );
+                // Select the middle Sa
+                const middleSa =
+                    saKeys[Math.floor(saKeys.length / 2)];
 
 
-                        playNote(
-                            frequency,
-                            "Sa",
-                            key
+                if (middleSa) {
+
+                    const frequency =
+                        Number(
+                            middleSa.dataset.frequency
                         );
 
 
-                        break;
-
-                    }
+                    playNote(
+                        frequency,
+                        "Sa",
+                        middleSa
+                    );
 
                 }
 
