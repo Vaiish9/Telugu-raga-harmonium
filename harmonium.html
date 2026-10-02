@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Virtual Harmonium | Telugu Raga Harmonium</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            🎹 Telugu Raga Harmonium
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                🏠 Home
+            </a>
+
+            <a
+                href="harmonium.html"
+                class="active"
+            >
+                🎹 Harmonium
+            </a>
+
+            <a href="raga.html">
+                🎼 Ragas
+            </a>
+
+            <a href="quiz.html">
+                🧠 Quiz
+            </a>
+
+            <a href="learn.html">
+                📖 Learn
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================================
+         PAGE HEADER
+    ========================================== -->
+
+    <header>
+
+        <h1>
+            🎹 Telugu Raga Harmonium
+        </h1>
+
+        <p>
+            Play • Explore • Practice
+        </p>
+
+    </header>
+
+
+
+    <!-- =========================================
+         SA / PITCH CONTROL
+    ========================================== -->
+
+    <section id="controls">
+
+        <h2>
+            🎵 Set Your Sa
+        </h2>
+
+
+        <div class="pitch-control">
+
+
+            <button
+                id="decreaseSa"
+                title="Lower Sa"
+            >
+                −
+            </button>
+
+
+            <div id="saDisplay">
+
+                <strong>
+                    Sa
+                </strong>
+
+                <span id="saPitch">
+                    C4 • 261.63 Hz
+                </span>
+
+            </div>
+
+
+            <button
+                id="increaseSa"
+                title="Raise Sa"
+            >
+                +
+            </button>
+
+
+        </div>
+
+
+        <button id="testSa">
+            🔊 Test Sa
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================================
+         HARMONIUM
+    ========================================== -->
+
+    <main>
+
+        <div id="harmonium"></div>
+
+        <div id="noteDisplay">
+
+            <span id="playingSwara">
+                Sa
+            </span>
+
+            <span id="playingFrequency">
+                261.63 Hz
+            </span>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================================
+         PLAYING GUIDE
+    ========================================== -->
+
+    <section id="guide">
+
+
+        <div class="guide-title">
+
+            <span>
+                🎹
+            </span>
+
+            <h2>
+                How to Play
+            </h2>
+
+        </div>
+
+
+        <div class="guide-grid">
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">
+                    🖱️
+                </div>
+
+                <h3>
+                    Click a Key
+                </h3>
+
+                <p>
+                    Click any harmonium key
+                    to hear its sound.
+                </p>
+
+            </div>
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">
+                    ⌨️
+                </div>
+
+                <h3>
+                    Computer Keyboard
+                </h3>
+
+                <p>
+                    Use the keyboard letters
+                    displayed on the keys.
+                </p>
+
+            </div>
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">
+                    🎼
+                </div>
+
+                <h3>
+                    Three Octaves
+                </h3>
+
+                <p>
+                    Explore lower, middle
+                    and upper swaras.
+                </p>
+
+            </div>
+
+
+            <div class="guide-card">
+
+                <div class="guide-icon">
+                    🎚️
+                </div>
+
+                <h3>
+                    Change Sa
+                </h3>
+
+                <p>
+                    Adjust the base pitch
+                    using − and +.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================
+             OCTAVE INFORMATION
+        ====================================== -->
+
+        <div class="keyboard-guide">
+
+            <h3>
+                🎵 Understanding the Octaves
+            </h3>
+
+
+            <div class="notation-info">
+
+                <span>
+                    • below swara = Lower Octave
+                </span>
+
+                <span>
+                    No dot = Middle Octave
+                </span>
+
+                <span>
+                    • above swara = Upper Octave
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <p>
+            🎹 Telugu Raga Harmonium
+        </p>
+
+        <span>
+            Learn • Play • Practice
+        </span>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2202 @@
+/* =========================================================
+   TELUGU RAGA HARMONIUM
+   COMPLETE WEBSITE CSS
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color: #3b2418;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #fffdf5 0%,
+            #f8ecd5 38%,
+            #ead3ae 72%,
+            #d4b17e 100%
+        );
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    min-height: 70px;
+
+    padding: 12px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    background:
+        rgba(255, 250, 238, 0.96);
+
+    border-bottom:
+        1px solid rgba(91, 45, 24, 0.14);
+
+    box-shadow:
+        0 5px 18px rgba(60, 31, 15, 0.12);
+
+    backdrop-filter: blur(10px);
+}
+
+.nav-logo {
+    color: #5a321b;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    padding: 9px 12px;
+
+    border-radius: 10px;
+
+    color: #79563d;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #5a321b;
+
+    background:
+        rgba(118, 80, 165, 0.10);
+
+    transform:
+        translateY(-1px);
+}
+
+.nav-links a.active {
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #7650a5,
+            #4c2874
+        );
+
+    box-shadow:
+        0 5px 12px
+        rgba(76, 40, 116, 0.25);
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+h1,
+h2,
+h3,
+h4 {
+    color: #4b2818;
+}
+
+p {
+    color: #79563d;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.page-header {
+    width:
+        min(900px, calc(100vw - 40px));
+
+    margin:
+        55px auto 0;
+
+    text-align: center;
+}
+
+.page-icon {
+    width: 68px;
+    height: 68px;
+
+    margin:
+        0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf5,
+            #ead3ae
+        );
+
+    font-size: 35px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(60, 31, 15, 0.15);
+}
+
+.page-header h1 {
+    margin: 0;
+
+    font-size:
+        clamp(34px, 5vw, 50px);
+
+    font-weight: 700;
+
+    color: #4b2818;
+
+    text-shadow:
+        0 2px 0 white,
+        0 5px 12px
+        rgba(73, 39, 20, 0.14);
+}
+
+.page-header p {
+    margin:
+        10px 0 0;
+
+    font-size: 17px;
+
+    color: #79563d;
+}
+
+
+/* =========================================================
+   HOME PAGE
+========================================================= */
+
+.hero {
+    width:
+        min(900px, calc(100vw - 40px));
+
+    margin:
+        65px auto 0;
+
+    text-align: center;
+}
+
+.hero-icon {
+    width: 85px;
+    height: 85px;
+
+    margin:
+        0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf5,
+            #ead3ae
+        );
+
+    font-size: 48px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(60, 31, 15, 0.18);
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-size:
+        clamp(38px, 6vw, 62px);
+
+    font-weight: 700;
+
+    color: #4b2818;
+
+    text-shadow:
+        0 2px 0 white,
+        0 5px 12px
+        rgba(73, 39, 20, 0.16);
+}
+
+.hero-subtitle {
+    margin:
+        12px 0 0;
+
+    font-size: 21px;
+
+    font-weight: 600;
+
+    color: #7650a5;
+
+    letter-spacing: 0.5px;
+}
+
+.hero-description {
+    width:
+        min(680px, 100%);
+
+    margin:
+        18px auto 0;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+
+    color: #79563d;
+}
+
+.hero-buttons {
+    margin-top: 28px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+
+    padding:
+        13px 26px;
+
+    border-radius: 26px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.primary-button {
+    color: white;
+
+    background:
+        linear-gradient(
+            145deg,
+            #7650a5,
+            #4c2874
+        );
+
+    box-shadow:
+        0 6px 14px
+        rgba(76, 40, 116, 0.25);
+}
+
+.secondary-button {
+    color: #5a321b;
+
+    background:
+        rgba(255, 250, 238, 0.92);
+
+    border:
+        1px solid rgba(91, 45, 24, 0.25);
+
+    box-shadow:
+        0 4px 10px
+        rgba(60, 31, 15, 0.08);
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 10px 20px
+        rgba(60, 31, 15, 0.18);
+}
+
+
+/* =========================================================
+   HOME FEATURES
+========================================================= */
+
+.features {
+    width:
+        min(1050px, calc(100vw - 40px));
+
+    margin:
+        75px auto 0;
+}
+
+.section-heading {
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    font-size: 29px;
+
+    color: #5a321b;
+}
+
+.section-heading p {
+    margin:
+        8px 0 0;
+
+    font-size: 14px;
+}
+
+.feature-grid {
+    margin-top: 28px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.feature-card {
+    min-height: 215px;
+
+    padding:
+        25px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    background:
+        rgba(255, 250, 238, 0.86);
+
+    border:
+        1px solid rgba(91, 45, 24, 0.16);
+
+    border-radius: 19px;
+
+    box-shadow:
+        0 7px 18px
+        rgba(60, 31, 15, 0.10);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 14px 27px
+        rgba(60, 31, 15, 0.17);
+}
+
+.feature-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 17px;
+
+    background:
+        rgba(118, 80, 165, 0.10);
+
+    font-size: 30px;
+}
+
+.feature-card h3 {
+    margin:
+        13px 0 7px;
+
+    font-size: 18px;
+}
+
+.feature-card p {
+    margin: 0;
+
+    line-height: 1.55;
+
+    font-size: 13px;
+}
+
+.card-link {
+    margin-top: auto;
+
+    padding-top: 15px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #7650a5;
+}
+
+
+/* =========================================================
+   RAGA PAGE
+========================================================= */
+
+.raga-learning {
+    width:
+        min(1050px, calc(100vw - 40px));
+
+    margin:
+        35px auto 0;
+}
+
+.raga-selector {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+}
+
+.raga-selector label {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#ragaSelect {
+    min-width: 260px;
+
+    padding:
+        12px 15px;
+
+    border:
+        1px solid rgba(91, 45, 24, 0.25);
+
+    border-radius: 11px;
+
+    background: #fffdf7;
+
+    color: #4b2818;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    outline: none;
+}
+
+.raga-card {
+    padding: 32px;
+
+    background:
+        rgba(255, 250, 238, 0.82);
+
+    border:
+        1px solid rgba(91, 45, 24, 0.15);
+
+    border-radius: 23px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(60, 31, 15, 0.12);
+}
+
+.raga-card-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.raga-card-header span {
+    font-size: 31px;
+}
+
+.raga-card-header h2 {
+    margin: 0;
+
+    font-size: 30px;
+}
+
+.raga-description {
+    margin:
+        10px 0 25px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.swara-sections {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 18px;
+}
+
+.swara-box {
+    padding:
+        23px 18px;
+
+    text-align: center;
+
+    background:
+        rgba(255,255,255,0.82);
+
+    border:
+        1px solid rgba(91,45,24,0.12);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 13px
+        rgba(60,31,15,0.08);
+}
+
+.swara-box h3 {
+    margin:
+        0 0 14px;
+
+    font-size: 16px;
+}
+
+.swara-sequence {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    color: #4b2818;
+}
+
+.raga-details-grid {
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+.detail-card {
+    padding:
+        18px 14px;
+
+    text-align: center;
+
+    background:
+        rgba(255,255,255,0.65);
+
+    border:
+        1px solid rgba(91,45,24,0.12);
+
+    border-radius: 14px;
+}
+
+.detail-icon {
+    font-size: 25px;
+}
+
+.detail-card h3 {
+    margin:
+        8px 0 6px;
+
+    font-size: 15px;
+}
+
+.detail-card p {
+    margin: 0;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+.raga-practice {
+    margin-top: 22px;
+
+    padding: 23px;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(118,80,165,0.08),
+            rgba(197,138,58,0.08)
+        );
+}
+
+.raga-practice h2 {
+    margin:
+        0 0 7px;
+
+    font-size: 20px;
+}
+
+.raga-practice p {
+    margin:
+        0 0 17px;
+
+    font-size: 13px;
+}
+
+.practice-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.practice-buttons button {
+    padding:
+        10px 20px;
+
+    border: none;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #7650a5,
+            #4c2874
+        );
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 10px
+        rgba(76,40,116,0.20);
+}
+
+
+/* =========================================================
+   MUSIC QUIZ
+========================================================= */
+
+.quiz-header {
+    width: min(900px, calc(100vw - 40px));
+    margin: 55px auto 0;
+    text-align: center;
+}
+
+.quiz-header h1 {
+    margin: 0;
+    font-size: clamp(34px, 5vw, 50px);
+    color: #4b2818;
+}
+
+.quiz-header p {
+    margin: 10px 0 0;
+    font-size: 17px;
+    color: #79563d;
+}
+
+.quiz-container {
+    width: min(800px, calc(100vw - 40px));
+    margin: 35px auto 60px;
+}
+
+.quiz-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #5a321b;
+    font-weight: 700;
+}
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(91, 45, 24, 0.12);
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #7650a5, #4c2874);
+    transition: width 0.3s ease;
+}
+
+.question-card {
+    padding: 35px;
+    text-align: center;
+    background: rgba(255, 250, 238, 0.90);
+    border: 1px solid rgba(91, 45, 24, 0.16);
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(60, 31, 15, 0.13);
+}
+
+.question-card h2 {
+    margin: 0 0 28px;
+    font-size: 24px;
+    color: #4b2818;
+}
+
+#options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.option {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(118, 80, 165, 0.18);
+    border-radius: 12px;
+    background: #fffdf7;
+    color: #4b2818;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, border 0.2s ease;
+}
+
+.option:hover:not(:disabled) {
+    transform: translateY(-2px);
+    border-color: #7650a5;
+    background: rgba(118, 80, 165, 0.08);
+}
+
+.option.correct {
+    border-color: #2e9b50;
+    background: #dff5e5;
+}
+
+.option.wrong {
+    border-color: #d64545;
+    background: #ffe1e1;
+}
+
+#feedback {
+    min-height: 30px;
+    margin: 22px 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.correct-feedback {
+    color: #2e8b57;
+}
+
+.wrong-feedback {
+    color: #d64545;
+}
+
+.quiz-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 24px;
+    background: linear-gradient(145deg, #7650a5, #4c2874);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(76, 40, 116, 0.22);
+}
+
+.quiz-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+}
+
+.quiz-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.result-card {
+    display: none;
+    padding: 40px;
+    text-align: center;
+    background: rgba(255, 250, 238, 0.90);
+    border: 1px solid rgba(91, 45, 24, 0.16);
+    border-radius: 22px;
+    box-shadow: 0 10px 25px rgba(60, 31, 15, 0.13);
+}
+
+.result-card h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+#final-score {
+    font-size: 22px;
+    font-weight: 700;
+    color: #7650a5;
+}
+
+#result-message {
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   LEARN PAGE
+========================================================= */
+
+.learn-page {
+    width:
+        min(1050px, calc(100vw - 40px));
+
+    margin:
+        45px auto 0;
+}
+
+.learning-grid {
+    margin-top: 28px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.learning-card {
+    min-height: 255px;
+
+    padding:
+        25px 20px;
+
+    text-align: center;
+
+    background:
+        rgba(255,250,238,0.86);
+
+    border:
+        1px solid rgba(91,45,24,0.15);
+
+    border-radius: 19px;
+
+    box-shadow:
+        0 7px 18px
+        rgba(60,31,15,0.10);
+}
+
+.learning-icon {
+    width: 57px;
+    height: 57px;
+
+    margin:
+        0 auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background:
+        rgba(118,80,165,0.10);
+
+    font-size: 28px;
+}
+
+.learning-card h3 {
+    margin:
+        13px 0 8px;
+
+    font-size: 18px;
+}
+
+.learning-card > p {
+    margin: 0;
+
+    line-height: 1.6;
+
+    font-size: 13px;
+}
+
+.swara-list {
+    margin-top: 17px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    flex-wrap: wrap;
+}
+
+.swara-list span {
+    padding:
+        5px 8px;
+
+    border-radius: 7px;
+
+    background:
+        rgba(118,80,165,0.10);
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.octave-examples {
+    margin-top: 17px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.octave-examples div {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding:
+        7px 10px;
+
+    border-radius: 7px;
+
+    background:
+        rgba(91,45,24,0.05);
+
+    font-size: 11px;
+}
+
+.learning-highlight {
+    margin-top: 18px;
+
+    padding: 9px;
+
+    border-radius: 9px;
+
+    background:
+        rgba(197,138,58,0.11);
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.sequence {
+    margin-top: 18px;
+
+    padding: 9px;
+
+    border-radius: 9px;
+
+    background:
+        rgba(118,80,165,0.09);
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.learning-path {
+    margin-top: 38px;
+
+    padding:
+        30px 24px;
+
+    border-radius: 21px;
+
+    background:
+        rgba(255,250,238,0.78);
+
+    border:
+        1px solid rgba(91,45,24,0.14);
+}
+
+.learning-path > h2 {
+    margin:
+        0 0 25px;
+
+    text-align: center;
+
+    font-size: 23px;
+}
+
+.path-steps {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.path-step {
+    flex:
+        1 1 0;
+
+    text-align: center;
+}
+
+.path-step > span {
+    width: 38px;
+    height: 38px;
+
+    margin:
+        0 auto 9px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #7650a5,
+            #4c2874
+        );
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.path-step h3 {
+    margin:
+        0 0 5px;
+
+    font-size: 14px;
+}
+
+.path-step p {
+    margin: 0;
+
+    font-size: 11px;
+
+    line-height: 1.45;
+}
+
+.path-line {
+    width: 35px;
+    height: 2px;
+
+    flex-shrink: 0;
+
+    background:
+        rgba(118,80,165,0.25);
+}
+
+.beginner-tip {
+    margin-top: 25px;
+
+    padding: 23px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    border-radius: 17px;
+
+    background:
+        rgba(197,138,58,0.09);
+}
+
+.beginner-tip .tip-icon {
+    font-size: 31px;
+}
+
+.beginner-tip h2 {
+    margin:
+        0 0 5px;
+
+    font-size: 18px;
+}
+
+.beginner-tip p {
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   HARMONIUM SA / PITCH CONTROL
+========================================================= */
+
+#controls {
+    width: 500px;
+
+    max-width:
+        calc(100vw - 40px);
+
+    margin:
+        30px auto 0;
+
+    padding:
+        24px 30px;
+
+    text-align: center;
+
+    background:
+        rgba(255,250,238,0.92);
+
+    border:
+        1px solid rgba(91,45,24,0.25);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(60,31,15,0.16);
+}
+
+#controls h2 {
+    margin:
+        0 0 20px;
+
+    font-size: 24px;
+}
+
+.pitch-control {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+}
+
+.pitch-control button {
+    width: 44px;
+    height: 44px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            #7d4526,
+            #5e2e18
+        );
+
+    color: white;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#saDisplay {
+    min-width: 170px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+#saDisplay strong {
+    font-size: 23px;
+}
+
+#saPitch {
+    font-size: 15px;
+}
+
+#testSa {
+    margin-top: 20px;
+
+    padding:
+        11px 27px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #d49a42,
+            #b97822
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HARMONIUM
+   IMPORTANT:
+   WHITE KEYS = 21
+   BLACK KEYS = positioned by JavaScript
+========================================================= */
+
+#harmonium {
+    position: relative;
+
+    width:
+        min(1200px, calc(100vw - 30px));
+
+    height: 360px;
+
+    margin:
+        42px auto 20px;
+
+    padding: 0;
+
+    display: block;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #4f2715 0%,
+            #713919 20%,
+            #95542b 48%,
+            #783d1d 75%,
+            #4b2413 100%
+        );
+
+    border:
+        5px solid #3c1d10;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 18px 35px
+        rgba(60,31,15,0.38),
+
+        inset 0 3px 0
+        rgba(255,255,255,0.20),
+
+        inset 0 -5px 10px
+        rgba(0,0,0,0.25);
+}
+
+
+/* Top decorative line */
+
+#harmonium::before {
+    content: "";
+
+    position: absolute;
+
+    top: 8px;
+
+    left: 15px;
+    right: 15px;
+
+    height: 4px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            to right,
+            transparent,
+            rgba(255,220,170,0.55),
+            transparent
+        );
+
+    z-index: 50;
+
+    pointer-events: none;
+}
+
+
+/* Decorative music */
+
+#harmonium::after {
+    content:
+        "♪     ♫     ♪";
+
+    position: absolute;
+
+    bottom: 5px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    color:
+        rgba(255,230,190,0.55);
+
+    font-size: 13px;
+
+    letter-spacing: 10px;
+
+    pointer-events: none;
+
+    z-index: 50;
+}
+
+
+/* =========================================================
+   ALL KEYS
+========================================================= */
+
+#harmonium .key {
+    cursor: pointer;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    outline: none;
+
+    user-select: none;
+}
+
+
+/* =========================================================
+   WHITE KEYS
+========================================================= */
+
+#harmonium .white {
+    position: absolute;
+
+    top: 25px;
+
+    width:
+        calc(100% / 21);
+
+    height: 310px;
+
+    margin: 0;
+
+    padding: 0;
+
+    border:
+        2px solid #332219;
+
+    border-top:
+        4px solid #4b3022;
+
+    border-radius:
+        0 0 9px 9px;
+
+    background:
+        linear-gradient(
+            to right,
+            #dedcd7 0%,
+            #ffffff 18%,
+            #fffefa 50%,
+            #f4f3ef 82%,
+            #d9d8d3 100%
+        );
+
+    color: #4b2818;
+
+    z-index: 1;
+
+    box-shadow:
+        0 7px 10px
+        rgba(35,18,9,0.32),
+
+        inset 1px 0 0
+        rgba(255,255,255,0.9),
+
+        inset -2px 0 4px
+        rgba(0,0,0,0.08);
+
+    transition:
+        transform 0.08s ease,
+        background 0.08s ease;
+}
+
+
+/* White hover */
+
+#harmonium .white:hover {
+    background:
+        linear-gradient(
+            to right,
+            #f1eee7,
+            #ffffff,
+            #fff6e5
+        );
+}
+
+
+/* White pressed */
+
+#harmonium .white.pressed {
+    transform:
+        translateY(4px);
+}
+
+
+/* =========================================================
+   BLACK KEYS
+========================================================= */
+
+#harmonium .black {
+    position: absolute;
+
+    top: 25px;
+
+    width: 3.25%;
+
+    height: 200px;
+
+    margin: 0;
+
+    padding: 0;
+
+    transform:
+        translateX(-50%);
+
+    z-index: 20;
+
+    border:
+        2px solid #111;
+
+    border-radius:
+        0 0 8px 8px;
+
+    background:
+        linear-gradient(
+            to right,
+            #050505,
+            #292929,
+            #090909
+        );
+
+    color: white;
+
+    box-shadow:
+        0 8px 10px
+        rgba(0,0,0,0.55),
+
+        inset 2px 0 3px
+        rgba(255,255,255,0.12);
+
+    transition:
+        transform 0.08s ease,
+        background 0.08s ease;
+}
+
+
+/* Black hover */
+
+#harmonium .black:hover {
+    background:
+        linear-gradient(
+            to right,
+            #101010,
+            #393939,
+            #111111
+        );
+}
+
+
+/* Black pressed */
+
+#harmonium .black.pressed {
+    transform:
+        translateX(-50%)
+        translateY(4px);
+
+    background:
+        linear-gradient(
+            to right,
+            #32164d,
+            #63318b,
+            #29133e
+        );
+}
+
+
+/* =========================================================
+   SWARA NAME - WHITE
+========================================================= */
+
+#harmonium .white .note-name {
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 105px;
+
+    transform:
+        translateX(-50%);
+
+    white-space: nowrap;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: #4b2818;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SWARA NAME - BLACK
+========================================================= */
+
+#harmonium .black .note-name {
+    position: absolute;
+
+    left: 50%;
+
+    top: 88px;
+
+    transform:
+        translateX(-50%);
+
+    white-space: nowrap;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    color: #e6d4ff;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   LOWER OCTAVE DOT
+========================================================= */
+
+#harmonium .lower .note-name::after {
+    content: "•";
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 10px;
+
+    color: #4b2818;
+}
+
+
+/* =========================================================
+   UPPER OCTAVE DOT
+========================================================= */
+
+#harmonium .upper .note-name::before {
+    content: "•";
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 10px;
+
+    color: #4b2818;
+}
+
+
+/* =========================================================
+   COMPUTER KEYBOARD LABEL - WHITE
+========================================================= */
+
+#harmonium .white .keyboard-label {
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 12px;
+
+    transform:
+        translateX(-50%);
+
+    min-width: 28px;
+
+    padding:
+        5px 8px;
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7040a2,
+            #4f287d
+        );
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    pointer-events: none;
+
+    box-shadow:
+        0 3px 6px
+        rgba(0,0,0,0.25);
+}
+
+
+/* =========================================================
+   COMPUTER KEYBOARD LABEL - BLACK
+========================================================= */
+
+#harmonium .black .keyboard-label {
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 12px;
+
+    transform:
+        translateX(-50%);
+
+    padding:
+        4px 7px;
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7040a2,
+            #4f287d
+        );
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FREQUENCY DISPLAY
+   HIDDEN UNTIL KEY IS PRESSED
+========================================================= */
+
+#noteDisplay {
+    width:
+        min(340px, calc(100vw - 40px));
+
+    min-height: 55px;
+
+    margin:
+        5px auto 30px;
+
+    padding:
+        12px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    background:
+        rgba(255,250,238,0.96);
+
+    border:
+        1px solid rgba(91,45,24,0.18);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 6px 15px
+        rgba(60,31,15,0.12);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(6px);
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
+}
+
+
+/* SHOW AFTER PRESS */
+
+#noteDisplay.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0);
+
+    box-shadow:
+        0 8px 18px
+        rgba(60,31,15,0.18);
+}
+
+
+/* Current swara */
+
+#playingSwara {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #5b301d;
+}
+
+
+/* Current frequency */
+
+#playingFrequency {
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #7040a2;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    margin-top: 65px;
+
+    padding:
+        28px 20px;
+
+    text-align: center;
+
+    background:
+        rgba(75,40,24,0.08);
+
+    border-top:
+        1px solid rgba(91,45,24,0.10);
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #5a321b;
+}
+
+footer span {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #79563d;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding:
+            12px 20px;
+    }
+
+    .feature-grid,
+    .learning-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .raga-details-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+    .swara-sections {
+        grid-template-columns: 1fr;
+    }
+
+    #harmonium {
+        width:
+            calc(100vw - 20px);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        position: relative;
+
+        gap: 10px;
+
+        padding:
+            12px 10px;
+    }
+
+    .nav-logo {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 2px;
+    }
+
+    .nav-links a {
+        padding:
+            6px 7px;
+
+        font-size: 11px;
+    }
+
+
+    /* PAGE HEADER */
+
+    .page-header {
+        width:
+            calc(100vw - 25px);
+
+        margin-top: 40px;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+    .page-header p {
+        font-size: 14px;
+    }
+
+
+    /* HOME */
+
+    .hero {
+        width:
+            calc(100vw - 25px);
+
+        margin-top: 45px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+
+    /* COMMON WIDTH */
+
+    .features,
+    .learn-page,
+    .quiz-header,
+    .quiz-container,
+    .raga-learning {
+        width:
+            calc(100vw - 25px);
+    }
+
+
+    /* CARDS */
+
+    .feature-grid,
+    .learning-grid,
+    .raga-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* RAGA */
+
+    .raga-card {
+        padding:
+            22px 15px;
+    }
+
+    .swara-sections {
+        grid-template-columns: 1fr;
+    }
+
+    .swara-sequence {
+        font-size: 16px;
+
+        letter-spacing: 2px;
+    }
+
+    #ragaSelect {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    /* QUIZ */
+
+    .quiz-header {
+        margin-top: 40px;
+    }
+
+    .quiz-header h1 {
+        font-size: 34px;
+    }
+
+    .quiz-header p {
+        font-size: 14px;
+    }
+
+    .quiz-container {
+        width: calc(100vw - 25px);
+    }
+
+    .question-card {
+        padding: 22px 15px;
+    }
+
+    .question-card h2 {
+        font-size: 20px;
+    }
+
+    #options {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-top {
+        font-size: 13px;
+    }
+
+    .result-card {
+        padding: 28px 18px;
+    }
+
+    .beginner-tip {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    /* LEARNING PATH */
+
+    .path-steps {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .path-line {
+        width: 2px;
+
+        height: 25px;
+    }
+
+
+    /* =====================================================
+       HARMONIUM MOBILE
+    ===================================================== */
+
+    #controls {
+        width:
+            calc(100vw - 25px);
+
+        padding:
+            20px 12px;
+    }
+
+    #harmonium {
+        width:
+            calc(100vw - 10px);
+
+        height: 330px;
+
+        margin-top: 30px;
+
+        border-radius: 14px;
+    }
+
+    #harmonium .white {
+        top: 22px;
+
+        height: 285px;
+    }
+
+    #harmonium .black {
+        top: 22px;
+
+        height: 175px;
+    }
+
+    #harmonium .white .note-name {
+        bottom: 95px;
+
+        font-size: 13px;
+    }
+
+    #harmonium .black .note-name {
+        top: 75px;
+
+        font-size: 9px;
+    }
+
+    #harmonium .white .keyboard-label {
+        bottom: 10px;
+
+        min-width: 22px;
+
+        padding:
+            4px 6px;
+
+        font-size: 9px;
+    }
+
+    #harmonium .black .keyboard-label {
+        bottom: 9px;
+
+        padding:
+            3px 5px;
+
+        font-size: 9px;
+    }
+
+    #noteDisplay {
+        width:
+            calc(100vw - 50px);
+
+        margin:
+            5px auto 25px;
+
+        padding:
+            11px 15px;
+    }
+
+    #playingSwara {
+        font-size: 18px;
+    }
+
+    #playingFrequency {
+        font-size: 13px;
+    }
+}

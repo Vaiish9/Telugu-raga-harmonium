@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Raga Learning | Telugu Raga Harmonium</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            🎹 Telugu Raga Harmonium
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                🏠 Home
+            </a>
+
+            <a href="harmonium.html">
+                🎹 Harmonium
+            </a>
+
+            <a
+                href="raga.html"
+                class="active"
+            >
+                🎼 Ragas
+            </a>
+
+            <a href="quiz.html">
+    🧠 Quiz
+</a>
+
+            <a href="learn.html">
+                📖 Learn
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =================================================
+         PAGE HEADER
+    ================================================== -->
+
+    <header class="page-header">
+
+        <div class="page-icon">
+            🎼
+        </div>
+
+        <h1>
+            Raga Learning Mode
+        </h1>
+
+        <p>
+            Learn swaras and practice Indian classical ragas
+        </p>
+
+    </header>
+
+
+
+    <!-- =================================================
+         RAGA LEARNING
+    ================================================== -->
+
+    <section class="raga-learning">
+
+
+        <!-- =================================================
+             RAGA SELECTOR
+        ================================================== -->
+
+        <div class="raga-selector">
+
+            <label for="ragaSelect">
+                Select a Raga
+            </label>
+
+
+            <select id="ragaSelect">
+
+                <option value="">
+                    Choose a Raga
+                </option>
+
+                <option value="mohanam">
+                    Mohanam
+                </option>
+
+                <option value="shankarabharanam">
+                    Shankarabharanam
+                </option>
+
+                <option value="kalyani">
+                    Kalyani
+                </option>
+
+                <option value="mayamalavagowla">
+                    Mayamalavagowla
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- =================================================
+             RAGA CARD
+        ================================================== -->
+
+        <div
+            class="raga-card"
+            id="ragaCard"
+        >
+
+
+            <!-- RAGA TITLE -->
+
+            <div class="raga-card-header">
+
+                <span>
+                    🎼
+                </span>
+
+                <h2 id="ragaName">
+                    Mohanam
+                </h2>
+
+            </div>
+
+
+            <!-- DESCRIPTION -->
+
+            <p
+                class="raga-description"
+                id="ragaDescription"
+            >
+                A beautiful pentatonic raga with five main swaras.
+            </p>
+
+
+
+            <!-- =================================================
+                 AROHANAM / AVAROHANAM
+            ================================================== -->
+
+            <div class="swara-sections">
+
+
+                <div class="swara-box">
+
+                    <h3>
+                        Arohanam ↑
+                    </h3>
+
+                    <div
+                        class="swara-sequence"
+                        id="arohanam"
+                    >
+                        Sa Ri₂ Ga₃ Pa Dha₂ Sa
+                    </div>
+
+                </div>
+
+
+
+                <div class="swara-box">
+
+                    <h3>
+                        Avarohanam ↓
+                    </h3>
+
+                    <div
+                        class="swara-sequence"
+                        id="avarohanam"
+                    >
+                        Sa Dha₂ Pa Ga₃ Ri₂ Sa
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 RAGA DETAILS
+            ================================================== -->
+
+            <div class="raga-details-grid">
+
+
+                <div class="detail-card">
+
+                    <span class="detail-icon">
+                        🎵
+                    </span>
+
+                    <h3>
+                        Main Swaras
+                    </h3>
+
+                    <p id="mainSwaras">
+                        Sa • Ri₂ • Ga₃ • Pa • Dha₂
+                    </p>
+
+                </div>
+
+
+
+                <div class="detail-card">
+
+                    <span class="detail-icon">
+                        🎶
+                    </span>
+
+                    <h3>
+                        Type
+                    </h3>
+
+                    <p id="ragaType">
+                        Pentatonic Raga
+                    </p>
+
+                </div>
+
+
+
+                <div class="detail-card">
+
+                    <span class="detail-icon">
+                        🌸
+                    </span>
+
+                    <h3>
+                        Character
+                    </h3>
+
+                    <p id="ragaCharacter">
+                        Bright, pleasant and devotional
+                    </p>
+
+                </div>
+
+
+
+                <div class="detail-card">
+
+                    <span class="detail-icon">
+                        🎹
+                    </span>
+
+                    <h3>
+                        Practice
+                    </h3>
+
+                    <p id="ragaPracticeInfo">
+                        Practice the swara sequence on the harmonium.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PRACTICE SECTION
+            ================================================== -->
+
+            <div class="raga-practice">
+
+                <h2>
+                    🎹 Practice This Raga
+                </h2>
+
+                <p>
+                    Practice the Arohanam and Avarohanam swara sequences.
+                </p>
+
+
+                <div class="practice-buttons">
+
+                    <button
+                        id="practiceArohanam"
+                        type="button"
+                    >
+                        ↑ Practice Arohanam
+                    </button>
+
+
+                    <button
+                        id="practiceAvarohanam"
+                        type="button"
+                    >
+                        ↓ Practice Avarohanam
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        <p>
+            🎹 Telugu Raga Harmonium
+        </p>
+
+        <span>
+            Learn • Play • Practice
+        </span>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         RAGA JAVASCRIPT
+    ================================================== -->
+
+    <script src="raga.js"></script>
+
+
+</body>
+
+</html>

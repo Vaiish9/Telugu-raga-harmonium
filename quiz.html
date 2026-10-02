@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Quiz | Telugu Raga Harmonium</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">🎵 Telugu Raga Harmonium</div>
+
+        <div class="nav-links">
+            <a href="index.html">🏠 Home</a>
+            <a href="harmonium.html">🎹 Harmonium</a>
+            <a href="raga.html">🎼 Ragas</a>
+            <a href="quiz.html" class="active">🧠 Quiz</a>
+            <a href="learn.html">📖 Learn</a>
+        </div>
+    </nav>
+
+
+    <!-- Quiz Header -->
+    <section class="quiz-header">
+
+        <h1>🧠 Music Quiz</h1>
+
+        <p>
+            Test your knowledge of Indian music, swaras, ragas
+            and harmonium!
+        </p>
+
+    </section>
+
+
+    <!-- Quiz Container -->
+    <main class="quiz-container">
+
+        <!-- Progress -->
+        <div class="quiz-top">
+
+            <span id="question-number">
+                Question 1 / 10
+            </span>
+
+            <span id="score">
+                Score: 0
+            </span>
+
+        </div>
+
+
+        <!-- Progress Bar -->
+        <div class="progress-container">
+
+            <div id="progress-bar"></div>
+
+        </div>
+
+
+        <!-- Question -->
+        <div class="question-card">
+
+            <h2 id="question">
+                Question will appear here
+            </h2>
+
+
+            <!-- Options -->
+            <div id="options">
+
+                <button class="option" onclick="selectAnswer(0)">
+                    Option A
+                </button>
+
+                <button class="option" onclick="selectAnswer(1)">
+                    Option B
+                </button>
+
+                <button class="option" onclick="selectAnswer(2)">
+                    Option C
+                </button>
+
+                <button class="option" onclick="selectAnswer(3)">
+                    Option D
+                </button>
+
+            </div>
+
+
+            <!-- Feedback -->
+            <p id="feedback"></p>
+
+
+            <!-- Next Button -->
+            <button
+                id="next-btn"
+                class="quiz-button"
+                onclick="nextQuestion()"
+                disabled
+            >
+                Next Question →
+            </button>
+
+        </div>
+
+
+        <!-- Result -->
+        <div id="result" class="result-card">
+
+            <h2>🎉 Quiz Completed!</h2>
+
+            <p id="final-score"></p>
+
+            <p id="result-message"></p>
+
+            <button
+                class="quiz-button"
+                onclick="restartQuiz()"
+            >
+                🔄 Try Again
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
